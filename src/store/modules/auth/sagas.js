@@ -17,7 +17,7 @@ export function* signIn({ payload }) {
     const { token, user } = response.data;
 
     if (user.provider) {
-      Alert.alert('Erro no login');
+      Alert.alert('Erro no login', 'Usuário não é provider');
       return;
     }
 
